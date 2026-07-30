@@ -4,5 +4,4 @@ It centers around what happened today in Bangladesh's gas industry, and what req
 The goals: 
 1. scrape data from the websites of several gas distributing companies and news papers
 2. create a dashboard that shows trends, news, inflation etc. 
-3. automate the whole process on Excel so that it updates with new realises on the mother websites
- 
+3. automate the whole process on Excel so that it updates with new releases on the mother websites. 
