@@ -6,4 +6,4 @@ It's an automated intelligence system that:
 4. Uses Power Query and the Data Model.
 5. Performs analysis with advanced DAX.
 6. Presents insights in an executive dashboard.
-7. Updates automatically through Power Automate Desktop.
+7. Updates automatically through Python.
