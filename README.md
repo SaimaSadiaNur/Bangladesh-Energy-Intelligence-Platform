@@ -1,7 +1,9 @@
-Aimed to create an automated Excel-based business intelligence system for monitoring Bangladesh's gas sector using publicly available data.
-It centers around what happened today in Bangladesh's gas industry, and what requires management's attention.
+It's an automated intelligence system that:
 
-The goals: 
-1. scrape data from the websites of several gas distributing companies and news papers
-2. create a dashboard that shows trends, news, inflation etc. 
-3. automate the whole process on Excel so that it updates with new releases on the mother websites. 
+Scrapes energy news from major English newspapers.
+Collects a handful of key market indicators (Brent, LNG, USD/BDT, etc.).
+Cleans and structures the data automatically.
+Uses Power Query and the Data Model.
+Performs analysis with advanced DAX.
+Presents insights in an executive dashboard.
+Updates automatically through Power Automate Desktop.
