@@ -99,7 +99,8 @@ The pipeline runs unattended via a `.bat` file wired into **Windows Task Schedul
 
 ## Dashboard Preview
 
-![Dashboard Preview](../dashboard/dashboard_preview.PNG)
+!<img width="934" height="336" alt="dashboard_preview" src="https://github.com/user-attachments/assets/3970cd73-a20e-4cc2-b0de-906c42f691a5" />
+
 
 The executive dashboard includes:
 - KPI cards for Article Coverage, Negative News, Crisis & Disruption, Policy & Regulatory activity, Coverage MoM, and Energy Transition mentions
