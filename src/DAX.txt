@@ -1,0 +1,77 @@
+1. Article Count
+
+Article Count :=
+DISTINCTCOUNT(FactNews[NewsID])
+
+2. Negative Coverage %
+
+Negative Coverage % :=
+DIVIDE(
+    CALCULATE(
+        [Article Count],
+        DimSentiment[Sentiment] = "Negative"
+    ),
+    [Article Count]
+)
+
+3. Crisis Disruption %
+
+Crisis Disruption % :=
+DIVIDE(
+    CALCULATE(
+        [Article Count],
+        DimEventType[Event Type] IN {
+            "Supply Disruption",
+            "Shutdown",
+            "Outage"
+        }
+    ),
+    [Article Count]
+)
+
+4. Policy Regulatory %
+
+Policy Regulatory % :=
+DIVIDE(
+    CALCULATE(
+        [Article Count],
+        DimEventType[Event Type] IN {
+            "Policy Decision",
+            "Policy / Planning",
+            "Regulation"
+        }
+    ),
+    [Article Count]
+)
+
+5. Energy Transition %
+
+Energy Transition % :=
+DIVIDE(
+    CALCULATE(
+        [Article Count],
+        DimTopic[Topic] IN {
+            "Renewable Energy",
+            "Nuclear Energy"
+        }
+    ),
+    [Article Count]
+)
+
+6. Coverage MoM %
+
+This one requires your DimDate to be a proper continuous date table:
+
+Previous Period Articles :=
+CALCULATE(
+    [Article Count],
+    DATEADD(DimDate[Date], -1, MONTH)
+)
+
+Then:
+
+Coverage MoM % :=
+DIVIDE(
+    [Article Count] - [Previous Period Articles],
+    [Previous Period Articles]
+)
