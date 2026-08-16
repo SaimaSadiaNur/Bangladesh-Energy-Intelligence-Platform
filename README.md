@@ -98,8 +98,7 @@ On first run, this creates `staging_data.csv`. On subsequent runs, it appends on
 The pipeline runs unattended via a `.bat` file wired into **Windows Task Scheduler**. The scheduled task triggers `scraping_newspapers.py`, which refreshes `staging_data.csv` and updates `refresh_log.csv` — so the Excel dashboard always reflects a recent "Last Data Update" timestamp without any manual intervention.
 
 ## Dashboard Preview
-
-!<img width="934" height="336" alt="dashboard_preview" src="https://github.com/user-attachments/assets/3970cd73-a20e-4cc2-b0de-906c42f691a5" />
+<img width="934" height="336" alt="dashboard_preview" src="https://github.com/user-attachments/assets/3970cd73-a20e-4cc2-b0de-906c42f691a5" />
 
 
 The executive dashboard includes:
